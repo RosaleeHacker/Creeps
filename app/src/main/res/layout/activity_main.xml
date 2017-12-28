@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <!-- top text bar-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a story"
+        android:layout_gravity="center"
+        android:textSize="7pt"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"/>
+
+    <!-- spinner with categories -->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/textView" />
+
+    <!-- 'Go' button -->
+    <Button
+        android:id="@+id/queryButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:background="@color/colorButton"
+        android:text="Go"
+        android:textColor="#ffffff" />
+
+    <!--star rating bar -->
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- number rating -->
+    <TextView
+        android:id="@+id/txtRatingValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"/>
+
+    <!-- view for displaying the story -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:background="#000000">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/responseView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"/>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

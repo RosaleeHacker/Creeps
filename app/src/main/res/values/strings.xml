@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Creeps</string>
+
+    <!--list of options for the spinner -->
+    <string-array name="categories_array">
+        <item>Disappearance</item>
+        <item>Gore</item>
+        <item>Real</item>
+        <item>Creature</item>
+        <item>Paranormal</item>
+    </string-array>
+</resources>
